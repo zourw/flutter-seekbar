@@ -1,52 +1,52 @@
 # seekbar
 
-[中文文档](./README.zh-CN.md)
+[English README](./README.md)
 
-A Flutter package that provides two seek bar widgets:
+一个 Flutter seek bar 组件包，提供两套组件：
 
-- `SeekBar`: a lightweight progress bar with primary and secondary progress
-- `AdvancedSeekBar`: an enhanced seek bar with indicator, ticks, discrete mode, thumb text, and richer callbacks
+- `SeekBar`：轻量级基础进度条，支持主进度和缓冲进度
+- `AdvancedSeekBar`：增强版进度条，支持 indicator、刻度、离散模式、thumb text 和更丰富的回调
 
 ![SeekBar demo](doc/images/overview.gif)
 
-## Features
+## 功能特性
 
-- Dart 3 compatible
-- Legacy `SeekBar` for simple media and buffered progress use cases
-- `AdvancedSeekBar` for:
-  - continuous or discrete progress
-  - min/max value ranges
-  - tick marks and tick texts
-  - indicator text formatting
+- 兼容 Dart 3
+- 保留原始 `SeekBar`，适合简单媒体进度和缓冲进度场景
+- `AdvancedSeekBar` 支持：
+  - 连续 / 离散进度
+  - `min / max / progress` 范围值
+  - tick marks 和 tick texts
+  - indicator 文案格式化
   - thumb text
-  - RTL layout
-  - richer callback payloads
-  - interaction controls such as `onlyThumbDraggable`, `seekSmoothly`, and `userSeekable`
+  - RTL 布局
+  - 更丰富的回调字段
+  - `onlyThumbDraggable`、`seekSmoothly`、`userSeekable` 等交互控制参数
 
-## Installation
+## 安装
 
-Add the package to your `pubspec.yaml`:
+在 `pubspec.yaml` 中添加依赖：
 
 ```yaml
 dependencies:
   seekbar: ^0.1.0
 ```
 
-Then run:
+然后执行：
 
 ```bash
 flutter pub get
 ```
 
-## Import
+## 导入
 
 ```dart
 import 'package:seekbar/seekbar.dart';
 ```
 
-## Basic `SeekBar`
+## 基础 `SeekBar`
 
-Use `SeekBar` when you only need primary progress and buffered progress.
+当你只需要主进度和缓冲进度时，使用 `SeekBar` 即可。
 
 ```dart
 class BasicSeekBarDemo extends StatefulWidget {
@@ -96,7 +96,7 @@ class _BasicSeekBarDemoState extends State<BasicSeekBarDemo> {
 
 ## `AdvancedSeekBar`
 
-Use `AdvancedSeekBar` when you need discrete steps, indicator UI, or richer interaction behavior.
+当你需要离散刻度、indicator UI 或更复杂的交互行为时，使用 `AdvancedSeekBar`。
 
 ```dart
 class AdvancedSeekBarDemo extends StatefulWidget {
@@ -146,7 +146,7 @@ class _AdvancedSeekBarDemoState extends State<AdvancedSeekBarDemo> {
 }
 ```
 
-### Available `AdvancedSeekBar` capabilities
+### `AdvancedSeekBar` 当前支持的能力
 
 - `min`, `max`, `progress`
 - `progressValueFloat`
@@ -158,9 +158,9 @@ class _AdvancedSeekBarDemoState extends State<AdvancedSeekBarDemo> {
 - `r2l`
 - `onChanged`, `onSeeking`, `onStartTrackingTouch`, `onStopTrackingTouch`
 
-## Callback payload
+## 回调字段
 
-`AdvancedSeekBar` exposes `AdvancedSeekBarValue` during `onSeeking`:
+`AdvancedSeekBar` 会在 `onSeeking` 中返回 `AdvancedSeekBarValue`：
 
 ```dart
 AdvancedSeekBar(
@@ -174,25 +174,29 @@ AdvancedSeekBar(
 )
 ```
 
-## Example app
+## 示例应用
 
-The repository includes a runnable example application that demonstrates:
+仓库自带一个可直接运行的 example，包含：
 
 - legacy `SeekBar`
 - continuous `AdvancedSeekBar`
-- callback inspection
-- hidden interaction parameters such as `seekSmoothly`, `thumbAdjustAuto`, and `userSeekable`
+- callback inspector
+- `seekSmoothly`、`thumbAdjustAuto`、`userSeekable` 等隐藏交互参数演示
 
-Run it with:
+运行方式：
 
 ```bash
 cd example
 flutter run
 ```
 
-## Current scope
+## 当前范围
 
-The Flutter port already covers the main seek bar interaction patterns, but it does not yet fully mirror every Android `IndicatorSeekBar` customization API. In particular, custom indicator views, drawable-based thumb/tick assets, and per-section track color builders are not implemented yet.
+当前 Flutter 版本已经覆盖了主要的 seek bar 交互能力，但还没有完全对齐 Android `IndicatorSeekBar` 的全部自定义 API。尤其是以下能力尚未实现：
+
+- custom indicator views
+- 基于 drawable 的 thumb / tick 资源配置
+- 分段轨道颜色 builder
 
 ## License
 

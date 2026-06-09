@@ -8,6 +8,7 @@
 .buildlog/
 .history
 .svn/
+docs/
 
 # IntelliJ related
 *.iml
@@ -22,10 +23,13 @@
 **/doc/api/
 .dart_tool/
 .flutter-plugins
+.flutter-plugins-dependencies
 .packages
 .pub-cache/
 .pub/
 build/
+coverage/
+/pubspec.lock
 
 # Android related
 **/android/**/gradle-wrapper.jar
