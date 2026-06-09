@@ -1,3 +1,8 @@
+## 0.1.1
+
+- Fix pub.dev README image rendering by switching README images to absolute GitHub raw URLs.
+- Add a separate Chinese README and keep the English README as the primary package page.
+
 ## 0.1.0
 
 - Add Dart 3 compatible package constraints and null-safe callback signatures.

@@ -7,7 +7,7 @@
 - `SeekBar`：轻量级基础进度条，支持主进度和缓冲进度
 - `AdvancedSeekBar`：增强版进度条，支持 indicator、刻度、离散模式、thumb text 和更丰富的回调
 
-![SeekBar demo](doc/images/overview.gif)
+![SeekBar demo](https://raw.githubusercontent.com/zourw/flutter_seekbar/master/doc/images/overview.gif)
 
 ## 功能特性
 
@@ -29,7 +29,7 @@
 
 ```yaml
 dependencies:
-  seekbar: ^0.1.0
+  seekbar: ^0.1.1
 ```
 
 然后执行：

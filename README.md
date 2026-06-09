@@ -7,7 +7,7 @@ A Flutter package that provides two seek bar widgets:
 - `SeekBar`: a lightweight progress bar with primary and secondary progress
 - `AdvancedSeekBar`: an enhanced seek bar with indicator, ticks, discrete mode, thumb text, and richer callbacks
 
-![SeekBar demo](doc/images/overview.gif)
+![SeekBar demo](https://raw.githubusercontent.com/zourw/flutter_seekbar/master/doc/images/overview.gif)
 
 ## Features
 
@@ -29,7 +29,7 @@ Add the package to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  seekbar: ^0.1.0
+  seekbar: ^0.1.1
 ```
 
 Then run:

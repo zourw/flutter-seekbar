@@ -1,6 +1,6 @@
 name: seekbar
 description: A Flutter package with a lightweight SeekBar and an AdvancedSeekBar featuring indicators, ticks, and discrete modes.
-version: 0.1.0
+version: 0.1.1
 homepage: https://github.com/zourw/flutter_seekbar
 repository: https://github.com/zourw/flutter_seekbar
 issue_tracker: https://github.com/zourw/flutter_seekbar/issues
